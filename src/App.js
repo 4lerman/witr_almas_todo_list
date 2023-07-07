@@ -5,10 +5,12 @@ import TaskAdd from "./components/TaskAdd";
 
 function App() {
 	const [tasks, setTasks] = useState([
-		{ id: 1, text: "Anzhumania" },
-		{ id: 2, text: "Pres Kachat'" },
-		{ id: 3, text: "Begit" },
+		{ id: 1, text: "Anzhumania", important: true},
+		{ id: 2, text: "Pres Kachat'", important: false },
+		{ id: 3, text: "Begit", important: false },
 	]);
+
+  //const [important, setImportant] = useState(false);
 
   const createTask = (newTask) => {
     setTasks([...tasks, newTask]);

@@ -1,0 +1,9 @@
+.myInput {
+    width: 80%;
+    padding: 20px 15px;
+    margin: 5px 0;
+    margin-right: 10px;
+    border: 2px solid aquamarine;
+    border-radius: 20px;
+    font-size: 16px;
+}

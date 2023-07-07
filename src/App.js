@@ -5,9 +5,9 @@ import TaskAdd from "./components/TaskAdd";
 
 function App() {
 	const [tasks, setTasks] = useState([
-		{ id: 1, text: "Anzhumania", important: true},
-		{ id: 2, text: "Pres Kachat'", important: false },
-		{ id: 3, text: "Begit", important: false },
+		{ id: 1, text: "Anzhumania", important: true, done: false},
+		{ id: 2, text: "Pres Kachat'", important: false, done: true },
+		{ id: 3, text: "Begit", important: false, done: false },
 	]);
 
   const createTask = (newTask) => {
@@ -17,6 +17,7 @@ function App() {
   const removeTask = (task) => {
     setTasks([...tasks].filter(t => t.id !== task.id))
   }
+
 
  	return (
 		<div className="App">

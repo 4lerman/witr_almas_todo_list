@@ -3,7 +3,7 @@ import MyInput from "./input/MyInput";
 import MyButton from "./button/MyButton";
 
 const TaskAdd = ({ create }) => {
-	const [task, setTask] = useState({ text: "", important: false });
+	const [task, setTask] = useState({ text: "", important: false, done: false });
 
 	const addNewTask = (e) => {
 		e.preventDefault();
@@ -12,7 +12,7 @@ const TaskAdd = ({ create }) => {
 			id: Date.now(),
 		};
 		create(newTask);
-		setTask({ text: "", important: false});
+		setTask({ text: "", important: false, done: false});
 	};
 
 	const setNewTaskImportant = (e) => {

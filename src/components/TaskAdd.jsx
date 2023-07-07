@@ -12,12 +12,12 @@ const TaskAdd = ({ create }) => {
 			id: Date.now(),
 		};
 		create(newTask);
-		setTask({ text: "", important: false, done: false});
+		setTask({ text: "", important: false, done: false });
 	};
 
 	const setNewTaskImportant = (e) => {
 		e.preventDefault();
-        setTask({...task, important: task.important ? false: true})
+		setTask({ ...task, important: task.important ? false : true });
 	};
 
 	return (

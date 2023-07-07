@@ -10,8 +10,6 @@ function App() {
 		{ id: 3, text: "Begit", important: false },
 	]);
 
-  //const [important, setImportant] = useState(false);
-
   const createTask = (newTask) => {
     setTasks([...tasks, newTask]);
   }
